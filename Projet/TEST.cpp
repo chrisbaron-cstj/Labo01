@@ -1,36 +1,38 @@
-// But: Comprendre la base d'un programme C++ en affichant un message à l'écran
+// But: Comprendre la base d'un programme C++ en affichant un message Ã  l'Ã©cran
 // Auteur: Christophe
 // Date: 2020-09-03
 
-// Pour commencer un programme, il faut créer une première fonction qui porte toujours le même nom: main
+// Pour commencer un programme, il faut crÃ©er une premiÃ¨re fonction qui porte toujours le mÃªme nom: main
 // Une fonction a 3 parties:
-// 1. Son nom commençant par une lettre minuscule et pas d'espace et pas de cacractère accentué
-// 2. Des parenthèses obligatoires et pour le main, elles seront vides car on n'utilisera pas de paramètres
-// 3. Le type de valeur de retour: pour le main deux possibilités: void pour vide ou rien et int pour integer qui veut dire valeur entière et dans ce cas main retourne un code d'érreur, 0 si tout va bien
+// 1. Son nom commenÃ§ant par une lettre minuscule et pas d'espace et pas de cacractÃ¨re accentuÃ©
+// 2. Des parenthÃ¨ses obligatoires et pour le main, elles seront vides car on n'utilisera pas de paramÃ¨tres
+// 3. Le type de valeur de retour: pour le main deux possibilitÃ©s: void pour vide ou rien et int pour integer qui veut dire valeur entiÃ¨re et dans ce cas main retourne un code d'Ã©rreur, 0 si tout va bien
 
 
-#include <iostream>		// Bibliothèque pour les outils de communications en entrée (i = imput) et de sortir (o = output) pour utiliser la commande cout et cin
-						// #include est la directive pour inclure les outils de la bibliothèque dans notre programme
+#include <iostream>		// BibliothÃ¨que pour les outils de communications en entrÃ©e (i = imput) et de sortir (o = output) pour utiliser la commande cout et cin
+						// #include est la directive pour inclure les outils de la bibliothÃ¨que dans notre programme
 
 // void main()
 int main()
 {					// Une aclade ouvre un bloc d'instructions. Dans mon cours. les accolades doivent rester sur une ligne toute seul
 
+	// Pour gerer efficacement la conversion des caracteres accentue
+	setlocale(LC_ALL,"");
 	// Pour communiquer entre l'utilisateur et le programme, il existe trois canaux standards: c pour canal et in pour input --> cin
 	//																						   c pour canal et out pour output --> cout
 	//																						   c pour canal et err pour error --> cerr
 
-	// Afficher un message èa l'écran pour souhaiter la bienvenue
+	// Afficher un message Ã¨a l'Ã©cran pour souhaiter la bienvenue
 
-	// << bec de canard, caractères de redirection le texte du côté large des becs est redirigé vers l'écran cout
-	// Le texte ou message doit toujours être mis entre guillemets ""
+	// << bec de canard, caractÃ¨res de redirection le texte du cÃ´tÃ© large des becs est redirigÃ© vers l'Ã©cran cout
+	// Le texte ou message doit toujours Ãªtre mis entre guillemets ""
 	// Chaque instruction doit se terminer par un point-virgule ;
 	std::cout << "Bienvenue a tous!";
 
-	// On retourne le code pour dire que tout a bien fonctionné
+	// On retourne le code pour dire que tout a bien fonctionnÃ©
 	return 0;
 
 
 }					// Ferme le bloc d'instructions
 
-// Ici on ne peut pas écrire une instruction car elle n'est pas dans un bloc
+// Ici on ne peut pas Ã©crire une instruction car elle n'est pas dans un bloc
