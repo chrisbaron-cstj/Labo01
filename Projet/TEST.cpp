@@ -2,3 +2,14 @@
 // Auteur: Christophe Baron
 // Date: 2020-09-03
 
+
+int main()
+{		// Un bloc d'instruction
+	
+
+
+
+
+
+	return 0;
+}
